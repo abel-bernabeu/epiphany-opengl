@@ -1,4 +1,4 @@
-##===- lib/Target/Epiphany/Makefile ---------------------------*- Makefile -*-===##
+##===- lib/Target/CppBackend/Makefile --- ------------------*- Makefile -*-===##
 #
 #                     The LLVM Compiler Infrastructure
 #
@@ -8,16 +8,9 @@
 ##===----------------------------------------------------------------------===##
 
 LEVEL = ../../..
-LIBRARYNAME = LLVMEpiphanyCodeGen
-TARGET = Epiphany
-
-# Make sure that tblgen is run, first thing.
-BUILT_SOURCES = \
-    EpiphanyGenRegisterInfo.inc \
-    EpiphanyGenInstrInfo.inc \
-    EpiphanyGenAsmWriter.inc
-
-DIRS = TargetInfo MCTargetDesc
+LIBRARYNAME = LLVMEpiphanyBackendCodeGen
+DIRS = TargetInfo
 
 include $(LEVEL)/Makefile.common
 
+CompileCommonOpts += -Wno-format

@@ -1,4 +1,4 @@
-;===- ./lib/Target/XCore/TargetInfo/LLVMBuild.txt --------------*- Conf -*--===;
+;===- ./lib/Target/EpiphanyBackend/TargetInfo/LLVMBuild.txt ---------*- Conf -*--===;
 ;
 ;                     The LLVM Compiler Infrastructure
 ;
@@ -17,7 +17,7 @@
 
 [component_0]
 type = Library
-name = EpiphanyInfo
+name = EpiphanyBackendInfo
 parent = Epiphany
 required_libraries = MC Support Target
 add_to_library_groups = Epiphany

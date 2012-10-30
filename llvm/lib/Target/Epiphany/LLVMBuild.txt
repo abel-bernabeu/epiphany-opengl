@@ -25,7 +25,7 @@ parent = Target
 
 [component_1]
 type = Library
-name = EpiphanyBackendCodeGen
+name = EpiphanyCodeGen
 parent = Epiphany
-required_libraries = Core EpiphanyBackendInfo Support Target
+required_libraries = Core EpiphanyInfo Support Target
 add_to_library_groups = Epiphany
